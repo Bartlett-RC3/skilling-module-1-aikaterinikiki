@@ -31,23 +31,12 @@ public class Session1Homework : MonoBehaviour
         return SumResult; 
     }
 
-    private void PrintMyList(string _MyText, List<string> _MyList)
-    {
-
-        _MyList.Add(_MyText);
-        Debug.Log(_MyList[0]);
-
-    }
-
-
     // Start is called before the first frame update
     void Start()
     {
         float SumResult = PrintAndCalculate(myNumber, myNumber2, myNumber3);
         
         Debug.Log("By adding the first two and substracting the third my number equals to: " + SumResult.ToString());
-
-        PrintMyList(myText, thisIsAList);
     }
 
     //Dictionary
